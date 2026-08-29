@@ -18,7 +18,7 @@ BaselineOfRudesheimMachineLearning >> baseline: spec [
 				with:
 				[
 					spec
-						repository:	'github://devid-rudesheim/Kernel-Rudesheim-Pharo:main'.
+						repository:	'github://devid-rudesheim/Kernel-Rudesheim-Pharo:develop'.
 				];
 				package:	'Rudesheim-MachineLearning'
 				with:
