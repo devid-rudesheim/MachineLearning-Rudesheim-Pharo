@@ -5,7 +5,7 @@ child repository, e.g. NeuralNetwork-Rudesheim-Pharo).
 "
 Class {
 	#name : 'MachineLearningRudesheimTest',
-	#superclass : 'TestCase',
+	#superclass : 'BasicRudesheimTest',
 	#category : 'Rudesheim-MachineLearning-Tests',
 	#package : 'Rudesheim-MachineLearning-Tests'
 }
@@ -18,6 +18,6 @@ MachineLearningRudesheimTest class >> targetClass [
 { #category : 'tests' }
 MachineLearningRudesheimTest >> testMachineLearningResolvesFromRudesheim [
 	self
-		assert:	self class targetClass MachineLearning
+		assert:	self basicTarget class MachineLearning
 		equals:	MachineLearningRudesheim.
 ]
