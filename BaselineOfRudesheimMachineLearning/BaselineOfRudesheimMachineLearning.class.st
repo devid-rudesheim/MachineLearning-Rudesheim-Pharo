@@ -20,20 +20,14 @@ BaselineOfRudesheimMachineLearning >> baseline: spec [
 					spec
 						repository:	'github://devid-rudesheim/Kernel-Rudesheim-Pharo:develop'.
 				];
-				baseline:	'RudesheimUtility'
-				with:
-				[
-					spec
-						repository:	'github://devid-rudesheim/Utility-Rudesheim-Pharo:develop'.
-				];
 				package:	'Rudesheim-MachineLearning'
 				with:
 				[
 					spec
 						requires:	#( 'RudesheimKernel' ).
 				];
-				project:	'RudesheimUtilityTests'
-				copyFrom:	'RudesheimUtility'
+				project:	'RudesheimKernelTests'
+				copyFrom:	'RudesheimKernel'
 				with:
 				[
 					spec
@@ -43,7 +37,7 @@ BaselineOfRudesheimMachineLearning >> baseline: spec [
 				with:
 				[
 					spec
-						requires:	#( 'Rudesheim-MachineLearning' 'RudesheimUtilityTests' ).
+						requires:	#( 'Rudesheim-MachineLearning' 'RudesheimKernelTests' ).
 				];
 				group:	#core
 				with:	#( 'Rudesheim-MachineLearning' );
